@@ -1,0 +1,113 @@
+.posterFront{display:flex;flex-direction:column;align-items:center;
+/*padding:15px 10px; */
+position:relative;width: 324px;
+height: 522px;
+left: calc(50% - 324px/2);
+top: calc(50% - 522px/2);
+background:#333333;border-radius:16px;}
+.posterFront-container{flex:none;order:0;flex-grow:0;margin:7px 0px;position: relative;
+width: 321px;
+height: 394px;
+left: 1.5px;
+top: 0px;}
+.posterFront-container-image{position:absolute;left:2%;right:2%;top:1.65%;bottom:0.13%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.posterFront-titleDetail{display:flex;flex-direction:row;justify-content:center;align-items:flex-start;padding:0px 10px 14px;flex:none;order:1;flex-grow:0;margin:3.5px 0px;align-self: stretch;
+position:static;width:304px;height:105px;left:10px;top:433px;}
+.posterFront-titleDetail-container{display:flex;flex-direction:column;align-items:flex-start;padding:0px;flex:none;order:0;flex-grow:0;position:static;width:215px;height:96px;left:1.5px;top:0px;}
+.posterFront-titleDetail-container-date{flex:none;order:0;flex-grow:0;margin:0px 0px;position:static;width:114px;height:36px;left:0px;top:0px;font-family:'Noto Sans TC';font-style:normal;font-weight:600;font-size:24px;line-height:36px;display:flex;align-items:center;color:#F2F2F2;}
+.posterFront-titleDetail-container-title{flex:none;order:1;flex-grow:0;margin:0px 0px;position:static;width:215px;height:60px;left:0px;top:36px;font-family:'Noto Sans TC';font-style:normal;font-weight:300;font-size:20px;line-height:30px;display:flex;align-items:center;color:#FFFFFF;}
+
+.posterFront-fixbar {
+  position: relative;
+width: 81px;
+height: 0.00001px;
+right: 3px;
+top: 0px;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 1;
+flex-grow: 0;
+margin: 0px 5px;
+}
+
+.detailReturn {
+    position: absolute;
+width: 54px;
+height: 54px;
+
+}
+.btnDetail {
+width: 54px;
+height: 54px;
+
+background:no-repeat center url(../img/iconMore.svg);background-size:contain;
+}
+.btnReturn {
+width: 54px;
+height: 54px;
+
+background:no-repeat center url(../img/iconReturn.svg);background-size:contain;
+
+}
+.posterFront-fixbar > div.btnCalendar,
+.posterFront-fixbar > a.btnCalendarLink {
+right: -5px;
+bottom: -49px;
+}
+.posterFront-fixbar > div.btnSignup{
+right: 45px;
+bottom: -36px;
+}
+.posterFront-fixbar > div.detailReturn{
+right: 25px;
+top: 44px;
+}
+.posterBack-container {
+  position: relative;
+/*width: 321px;*/
+height: 394px;
+left: 0px;
+top: 1.5px;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+margin: 7px 0px;
+}
+.posterBack-container-text {
+  position: absolute;
+left: 2%;
+    right: 2%;
+    top: 1.65%;
+    bottom: 0.13%;
+overflow-y: scroll;
+
+background: #FFFFFF;
+}
+.posterContext {
+  position: absolute;
+left: 5.99%;
+right: 2.82%;
+top: 2.41%;
+bottom: 18.99%;
+
+font-family: 'Noto Sans TC';
+font-style: normal;
+font-weight: 300;
+font-size: 18px;
+line-height: 30px;
+
+color: #000000;
+}

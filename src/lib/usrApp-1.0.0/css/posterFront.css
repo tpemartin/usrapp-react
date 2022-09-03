@@ -1,0 +1,63 @@
+.pageBody {
+  display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 100px 10px;
+
+position: relative;
+
+background: #FFFFFF;
+}
+.posterFront{display:flex;flex-direction:column;align-items:center;padding:15px 10px;position:relative;width:340.08px;height:634.2px;background:#333333;border-radius:16px;max-width:90vw;max-height:90vh;margin-right:8px}
+div.posterFront-container-btnFixer > div.share{
+  position: absolute;
+    bottom: 0px;
+    right: 0px;
+}
+.posterContext {
+  position: absolute;
+left: 5.99%;
+right: 2.82%;
+top: 2.41%;
+bottom: 18.99%;
+
+font-family: 'Noto Sans TC';
+font-style: normal;
+font-weight: 340;
+font-size: 20px;
+line-height: 31px;
+
+color: #000000
+}
+div.posterFront-container-btnFixer > a{
+  position: absolute;
+    bottom: 0px;
+    left: 0px;
+}
+.posterFront-container{flex:none;order:0;align-self:stretch;flex-grow:1;margin:21.5px 0px;position:static;height:443.2px;left:10px;top:15px;}
+.posterBack-container{flex:none;order:0;align-self:stretch;flex-grow:1;margin:21.5px 0px;position:relative;height:443.2px;top:15px;}
+.posterFront-container-image{position:absolute;height:443.2px;left:0px;right:0px;top:0px;;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;}
+.posterBack-container-context{
+  position: absolute;
+height: 440px;
+left: 0px;
+right: 4.08px;
+top: 0.13px;
+overflow-y: scroll;
+
+background: #FFFFFF;
+}
+.posterFront-container-btnFixer{position:absolute;width:140px;height:0px;right:-0.03px;top:443.26px;}
+.分享按鍵{display:flex;flex-direction:column;justify-content:flex-end;align-items:center;padding:0px;position:absolute;width:63px;height:267px;right:0px;bottom:-1px;}
+
+.posterFront-titleDetail{
+justify-content: space-between;
+display:flex;flex-direction:row;align-items:center;padding:0px 10px;flex:none;order:1;align-self:stretch;flex-grow:0;margin:21.5px 0px;position:static;height:118px;left:10px;top:501.2px;}
+.posterFront-titleDetail-title{flex:none;order:0;flex-grow:1;margin:0px 15px;position:static;width:200.08px;height:108px;left:20px;top:5px;font-family:'Noto Sans TC';font-style:normal;font-weight:400;font-size:20px;line-height:36px;display:flex;align-items:center;color:#FFFFFF;}
+.posterFront-titleDetail-detail{flex:none;order:1;flex-grow:0;margin:0px 15px;position:static;width:54px;height:54px;left:250.08px;top:29px;background:no-repeat center url(../img/iconMore.svg);}
+.posterBack-titleDetail-return{flex:none;order:1;flex-grow:0;margin:0px 15px;position:static;width:54px;height:54px;left:250.08px;top:29px;background:no-repeat center url(../img/iconReturn.svg);}
+

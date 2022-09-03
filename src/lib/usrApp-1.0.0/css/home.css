@@ -1,0 +1,9 @@
+.home-maskGroup{position:absolute;width:40px;height:40px;left:0px;top:0px;}
+.home-maskGroup-maskImg{position:absolute;width:40px;height:40px;left:0px;top:0px;border-radius:40px;}
+
+.home-maskGroup-filterColor{position:absolute;width:40px;height:40px;left:0px;top:0px;}
+/*
+.circle{position:absolute;width:40px;height:40px;left:0px;top:0px;border:2px solid #000000;box-sizing:border-box;}
+.Rectangle 1{position:absolute;left:0%;right:0%;top:0%;bottom:0%;background:#000000;border-radius:40px;}
+.home{position:relative;width:40px;height:40px;background:#FFFFFF;box-shadow:0px 4px 4px rgba(0, 0, 0, 0.25);border-radius:40px;}
+.home1{position:absolute;width:21.25px;height:20.06px;left:9px;top:10px;background:#000000;}*/

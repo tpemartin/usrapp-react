@@ -1,0 +1,2 @@
+.btnCalendar{display:flex;flex-direction:row;justify-content:center;align-items:center;padding:0px;position:absolute;width:43px;height:43px;border:1px solid #BDBDBD;box-sizing:border-box;border-radius:43px;}
+.btnCalendar-img{flex:none;order:0;flex-grow:0;position:static;width:22px;height:22px;left:10.5px;top:10.5px;background:url(../img/btnCalendar-img.svg) no-repeat center;}

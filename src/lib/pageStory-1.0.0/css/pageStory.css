@@ -1,0 +1,76 @@
+.pageStory{display:flex;flex-direction:column;align-items:center;padding:0px;position:relative;width:100%;height:100vh;background:#EFEFEF;}
+.pageStory-navbar{display:flex;flex-direction:row;justify-content:space-between;align-items:center;padding:11px 18px;flex:none;order:0;align-self:stretch;flex-grow:0;margin:3px 0px;position:static;height:102px;left:0%;right:0%;top:0px;background:#F2F2F2;border:1px solid #000000;box-shadow:0px 4px 4px rgba(0, 0, 0, 0.25);}
+.pageStory-navbar-logo{flex:none;order:0;flex-grow:0;position:static;width:61.76px;height:80px;left:18px;top:11px;background:url(/lib/img-1/logo.png);}
+.pageStory-navbar-iconMore{flex:none;order:1;flex-grow:0;position:static;width:39.18px;height:41.25px;left:317.82px;top:30.38px;background:url(/lib/img-1/iconMore.svg);}
+.pageStory-stories{flex:none;order:1;align-self:stretch;flex-grow:1;margin:3px 0px;position:static;height:602px;left:calc(50% - 375px/2);top:calc(50% - 602px/2 + 9px);overflow-y:scroll;}
+.pageStory-stories-cards{display:flex;flex-direction:column;align-items:flex-start;padding:0px;position:absolute;height:1062px;left:0%;right:0%;top:0px;}
+..slider-large{flex:none;order:0;align-self:stretch;flex-grow:0;margin:9px 0px;position:static;width:375px;height:252px;left:0px;top:0px;filter:drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));}
+..slider-background-large{position:absolute;height:252px;left:0%;right:0%;top:0px;}
+..article-image{position:absolute;width:375px;height:499.88px;left:0px;top:0px;background:url(image.png);mix-blend-mode:overlay;}
+..slider-content-large{display:flex;flex-direction:column;justify-content:space-between;align-items:flex-start;padding:10px 25px;position:absolute;height:252px;left:0%;right:0%;top:0px;}
+..article-category-generation{display:flex;flex-direction:row;align-items:center;padding:0px;flex:none;order:0;align-self:stretch;flex-grow:0;margin:10px 0px;position:static;width:325px;height:60px;left:25px;top:10px;border-radius:2px;}
+..article-category-elderly{display:flex;flex-direction:row;align-items:center;padding:0px;flex:none;order:0;align-self:stretch;flex-grow:0;margin:10px 0px;position:static;width:325px;height:60px;left:25px;top:10px;border-radius:2px;}
+.pageStory-stories-sidenave{position:absolute;left:85px;right:0px;top:0%;bottom:-1.64%;}
+.pageStory-footer{display:flex;flex-direction:row;justify-content:space-around;align-items:center;padding:20px 35px;flex:none;order:2;align-self:stretch;flex-grow:0;margin:3px 0px;position:static;height:84px;left:0%;right:0%;top:calc(50% - 84px/2 + 361px);background:#FFFFFF;border:1px solid #000000;}
+.pageStory-footer-home{flex:none;order:0;flex-grow:0;margin:0px 12px;position:static;width:31px;height:31px;left:53.5px;top:26.5px;background:no-repeat url(/lib/img-1/iconHome.svg);}
+.iconHome{position:absolute;left:0%;right:0%;top:0%;bottom:0%;background:#000000;}
+.pageStory-footer-story{flex:none;order:1;flex-grow:0;margin:0px 12px;position:static;width:31px;height:31px;left:132.5px;top:26.5px;background:no-repeat url(/lib/img-1/iconStory.svg);}
+.iconStory{position:absolute;width:31px;height:31px;left:0px;top:0px;background:#000000;}
+.pageStory-footer-event{flex:none;order:2;flex-grow:0;margin:0px 12px;position:static;width:31px;height:31px;left:211.5px;top:26.5px;background:no-repeat url(/lib/img-1/iconEvent.svg);}
+.iconEvent{position:absolute;width:31px;height:31px;left:0px;top:0px;background:#000000;}
+.pageStory-footer-list{flex:none;order:3;flex-grow:0;margin:0px 12px;position:static;width:31px;height:31px;left:290.5px;top:26.5px;background:no-repeat url(/lib/img-1/iconList.svg);}
+.iconList{position:absolute;left:0%;right:0%;top:0%;bottom:0%;background:#000000;}
+..article-category-collegetown{display:flex;flex-direction:row;align-items:center;padding:0px;flex:none;order:0;align-self:stretch;flex-grow:0;margin:10px 0px;position:static;width:325px;height:60px;left:25px;top:10px;border-radius:2px;}
+..article-category-collegetown1{display:flex;flex-direction:row;align-items:center;padding:0px;flex:none;order:0;align-self:stretch;flex-grow:0;margin:10px 0px;position:static;width:325px;height:60px;left:25px;top:10px;border-radius:2px;}
+..article-category-collegetown2{display:flex;flex-direction:row;align-items:center;padding:0px;flex:none;order:0;align-self:stretch;flex-grow:0;margin:10px 0px;position:static;width:325px;height:60px;left:25px;top:10px;border-radius:2px;}
+..article-category-collegetown3{display:flex;flex-direction:row;align-items:center;padding:0px;flex:none;order:0;align-self:stretch;flex-grow:0;margin:10px 0px;position:static;width:325px;height:60px;left:25px;top:10px;border-radius:2px;}
+..article-title{flex:none;order:1;flex-grow:0;margin:10px 0px;position:static;width:325px;height:55px;left:25px;top:187px;}
+..article-title1{position:absolute;left:0%;right:0%;top:0%;bottom:0%;font-family:Roboto;font-style:normal;font-weight:normal;font-size:24px;line-height:28px;color:#000000;border:1px solid #F2F2F2;}
+..article-title2{flex:none;order:1;flex-grow:0;margin:10px 0px;position:static;width:325px;height:55px;left:25px;top:88px;}
+..article-title3{position:absolute;left:0%;right:0%;top:0%;bottom:0%;font-family:Roboto;font-style:normal;font-weight:normal;font-size:24px;line-height:28px;color:#000000;border:1px solid #F2F2F2;}
+..article-title4{flex:none;order:1;flex-grow:0;margin:10px 0px;position:static;width:325px;height:55px;left:25px;top:88px;}
+..article-title5{position:absolute;left:0%;right:0%;top:0%;bottom:0%;font-family:Roboto;font-style:normal;font-weight:normal;font-size:24px;line-height:28px;color:#000000;border:1px solid #F2F2F2;}
+..article-title6{flex:none;order:1;flex-grow:0;margin:10px 0px;position:static;width:325px;height:55px;left:25px;top:88px;}
+..article-title7{position:absolute;left:0%;right:0%;top:0%;bottom:0%;font-family:Roboto;font-style:normal;font-weight:normal;font-size:24px;line-height:28px;color:#000000;border:1px solid #F2F2F2;}
+..article-title8{flex:none;order:1;flex-grow:0;margin:10px 0px;position:static;width:325px;height:55px;left:25px;top:88px;}
+..article-title9{position:absolute;left:0%;right:0%;top:0%;bottom:0%;font-family:Roboto;font-style:normal;font-weight:normal;font-size:24px;line-height:28px;color:#000000;border:1px solid #F2F2F2;}
+..article-title10{flex:none;order:1;flex-grow:0;margin:10px 0px;position:static;width:325px;height:55px;left:25px;top:88px;}
+..article-title11{position:absolute;left:0%;right:0%;top:0%;bottom:0%;font-family:Roboto;font-style:normal;font-weight:normal;font-size:24px;line-height:28px;color:#000000;border:1px solid #F2F2F2;}
+..past-story{position:absolute;width:375px;height:153px;left:0px;top:0px;background:url(image.png);mix-blend-mode:overlay;}
+..past-story1{position:absolute;width:375px;height:153px;left:0px;top:0px;background:url(image.png);mix-blend-mode:overlay;}
+..past-story2{position:absolute;width:375px;height:153px;left:0px;top:0px;background:url(image.png);mix-blend-mode:overlay;}
+..past-story3{position:absolute;width:375px;height:153px;left:0px;top:0px;background:url(image.png);mix-blend-mode:overlay;}
+..past-story4{position:absolute;width:375px;height:153px;left:0px;top:0px;background:url(image.png);mix-blend-mode:overlay;}
+..slider-background-small{position:absolute;width:375px;height:153px;left:0px;top:0px;}
+..slider-background-small1{position:absolute;width:375px;height:153px;left:0px;top:0px;}
+..slider-background-small2{position:absolute;width:375px;height:153px;left:0px;top:0px;}
+..slider-background-small3{position:absolute;width:375px;height:153px;left:0px;top:0px;}
+..slider-background-small4{position:absolute;height:153px;left:0%;right:0%;top:0px;}
+..slider-content-small{display:flex;flex-direction:column;justify-content:space-between;align-items:flex-start;padding:10px 25px;position:absolute;width:375px;height:153px;left:0px;top:0px;}
+..slider-content-small1{display:flex;flex-direction:column;justify-content:space-between;align-items:flex-start;padding:10px 25px;position:absolute;width:375px;height:153px;left:0px;top:0px;}
+..slider-content-small2{display:flex;flex-direction:column;justify-content:space-between;align-items:flex-start;padding:10px 25px;position:absolute;width:375px;height:153px;left:0px;top:0px;}
+..slider-content-small3{display:flex;flex-direction:column;justify-content:space-between;align-items:flex-start;padding:10px 25px;position:absolute;width:375px;height:153px;left:0px;top:0px;}
+..slider-content-small4{display:flex;flex-direction:column;justify-content:space-between;align-items:flex-start;padding:10px 25px;position:absolute;width:375px;height:153px;left:0px;top:0px;}
+..slider-small{flex:none;order:1;align-self:stretch;flex-grow:0;margin:9px 0px;position:static;width:375px;height:153px;left:0px;top:261px;filter:drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));}
+..slider-small1{flex:none;order:2;align-self:stretch;flex-grow:0;margin:9px 0px;position:static;width:375px;height:153px;left:0px;top:423px;filter:drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));}
+..slider-small2{flex:none;order:3;align-self:stretch;flex-grow:0;margin:9px 0px;position:static;width:375px;height:153px;left:0px;top:585px;filter:drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));}
+..slider-small3{flex:none;order:4;align-self:stretch;flex-grow:0;margin:9px 0px;position:static;width:375px;height:153px;left:0px;top:747px;filter:drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));}
+..slider-small4{flex:none;order:5;align-self:stretch;flex-grow:0;margin:9px 0px;position:static;width:375px;height:153px;left:0px;top:909px;filter:drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));}
+.Frame 17{flex:none;order:0;flex-grow:0;margin:0px 20px;position:static;width:60px;height:60px;left:0px;top:0px;background:#FFFFFF;mix-blend-mode:hard-light;border:1px solid #000000;box-sizing:border-box;border-radius:60px;}
+.Frame 171{flex:none;order:0;flex-grow:0;margin:0px 20px;position:static;width:60px;height:60px;left:0px;top:0px;background:#FFFFFF;mix-blend-mode:hard-light;border:1px solid #000000;box-sizing:border-box;border-radius:60px;}
+.Frame 172{flex:none;order:0;flex-grow:0;margin:0px 20px;position:static;width:60px;height:60px;left:0px;top:0px;background:#FFFFFF;mix-blend-mode:hard-light;border:1px solid #000000;box-sizing:border-box;border-radius:60px;}
+.Frame 173{flex:none;order:0;flex-grow:0;margin:0px 20px;position:static;width:60px;height:60px;left:0px;top:0px;background:#FFFFFF;mix-blend-mode:hard-light;border:1px solid #000000;box-sizing:border-box;border-radius:60px;}
+.Frame 174{flex:none;order:0;flex-grow:0;margin:0px 20px;position:static;width:60px;height:60px;left:0px;top:0px;background:#FFFFFF;mix-blend-mode:hard-light;border:1px solid #000000;box-sizing:border-box;border-radius:60px;}
+.Frame 175{flex:none;order:0;flex-grow:0;margin:0px 20px;position:static;width:60px;height:60px;left:0px;top:0px;background:#FFFFFF;mix-blend-mode:hard-light;border:1px solid #000000;box-sizing:border-box;border-radius:60px;}
+.世代共融{position:absolute;width:40px;height:40px;left:calc(50% - 40px/2);top:calc(50% - 40px/2);background:url(image.png);}
+.世代共融1{flex:none;order:1;flex-grow:0;margin:0px 20px;position:static;width:43px;right:202px;top:26.67%;bottom:26.67%;font-family:Roboto;font-style:normal;font-weight:normal;font-size:24px;line-height:28px;color:#000000;}
+.台北大學城{position:absolute;width:40px;height:40px;left:calc(50% - 40px/2);top:calc(50% - 40px/2);background:url(college.png);}
+.台北大學城1{position:absolute;width:40px;height:40px;left:calc(50% - 40px/2);top:calc(50% - 40px/2);background:url(college.png);}
+.台北大學城2{position:absolute;width:40px;height:40px;left:calc(50% - 40px/2);top:calc(50% - 40px/2);background:url(college.png);}
+.台北大學城3{position:absolute;width:40px;height:40px;left:calc(50% - 40px/2);top:calc(50% - 40px/2);background:url(college.png);}
+.活躍老化{position:absolute;width:40px;height:40px;left:calc(50% - 40px/2);top:calc(50% - 40px/2);background:url(elderly.png);}
+.活躍老化1{flex:none;order:1;flex-grow:0;margin:0px 20px;position:static;width:43px;right:202px;top:26.67%;bottom:26.67%;font-family:Roboto;font-style:normal;font-weight:normal;font-size:24px;line-height:28px;color:#000000;}
+.臺北大學城{flex:none;order:1;flex-grow:0;margin:0px 20px;position:static;width:120px;right:125px;top:26.67%;bottom:26.67%;font-family:Roboto;font-style:normal;font-weight:normal;font-size:24px;line-height:28px;color:#000000;}
+.臺北大學城1{flex:none;order:1;flex-grow:0;margin:0px 20px;position:static;width:54px;right:191px;top:26.67%;bottom:26.67%;font-family:Roboto;font-style:normal;font-weight:normal;font-size:24px;line-height:28px;color:#000000;}
+.臺北大學城2{flex:none;order:1;flex-grow:0;margin:0px 20px;position:static;width:54px;right:191px;top:26.67%;bottom:26.67%;font-family:Roboto;font-style:normal;font-weight:normal;font-size:24px;line-height:28px;color:#000000;}
+.臺北大學城3{flex:none;order:1;flex-grow:0;margin:0px 20px;position:static;width:54px;right:191px;top:26.67%;bottom:26.67%;font-family:Roboto;font-style:normal;font-weight:normal;font-size:24px;line-height:28px;color:#000000;}

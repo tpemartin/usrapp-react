@@ -1,0 +1,12 @@
+.shareHorizontal{display:flex;flex-direction:row;align-items:flex-start;padding:0px;position:relative;width:118.59px;height:44.5px;}
+.carbon:email{flex:none;order:0;flex-grow:0;margin:0px 10px;position:static;width:28px;left:calc(50% - 28px/2);top:16.29%;bottom:16.29%;}
+.shareHorizontal-line{display:flex;flex-direction:row;justify-content:center;align-items:center;padding:0px;flex:none;order:1;flex-grow:0;margin:0px 5px;position:static;width:54px;height:44.5px;left:0px;top:0px;background:#27AE60;border:2px solid #E0E0E0;box-sizing:border-box;box-shadow:0px 7px 20px rgba(0, 0, 0, 0.25);border-radius:12px;}
+.LINE{flex:none;order:0;flex-grow:0;margin:0px 10px;position:static;width:54px;height:23px;left:0px;top:10.75px;font-family:'Roboto';font-style:normal;font-weight:400;font-size:20px;line-height:23px;text-align:center;color:#FFFFFF;}
+.ant-design:instagram-outlined{position:absolute;width:30px;left:calc(50% - 30px/2 - 0.75px);top:17.78%;bottom:15.56%;}
+.shareHorizontal-facebook{display:flex;flex-direction:row;justify-content:center;align-items:center;padding:7px 20px;flex:none;order:3;flex-grow:0;margin:0px 5px;position:static;width:54.59px;height:43.67px;left:64px;top:0px;background:#2D9CDB;border:2px solid #E0E0E0;box-sizing:border-box;box-shadow:0px 7px 20px rgba(0, 0, 0, 0.25);border-radius:12px;}
+.facebook{flex:none;order:0;flex-grow:0;margin:0px 10px;position:static;width:14.59px;left:calc(50% - 14.59px/2);top:16.03%;bottom:16.03%;}
+.share{display:flex;flex-direction:row;justify-content:center;align-items:center;padding:0px;flex:none;order:0;flex-grow:0;margin:0px 10px;position:static;display:none;width:54px;height:44.5px;left:calc(50% - 54px/2 - 32.29px);top:calc(50% - 44.5px/2);background:#F2994A;border:2px solid #E0E0E0;box-sizing:border-box;border-radius:12px;}
+.share1{flex:none;order:2;flex-grow:0;margin:0px 10px;position:static;display:none;width:54px;height:44.5px;left:128px;top:0px;background:#BB6BD9;border:2px solid #E0E0E0;box-sizing:border-box;border-radius:12px;}
+.Vector{position:absolute;left:6.25%;right:0.69%;top:18.75%;bottom:18.75%;background:#FFFFFF;}
+.Vector1{position:absolute;left:10.97%;right:10.95%;top:10.96%;bottom:10.96%;background:#FFFFFF;}
+.Vector2{position:absolute;left:0.03%;right:0.03%;top:0%;bottom:0%;background:#FEFEFE;}

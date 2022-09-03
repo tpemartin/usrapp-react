@@ -1,0 +1,65 @@
+.card-small {
+/* 卡片 */
+
+
+box-sizing: border-box;
+
+/* Auto layout */
+
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 7px;
+gap: 9px;
+
+position: absolute;
+height: 125px;
+left: 3px;
+right: 3px;
+top: 0px;
+
+background: #FFFFFF;
+border: 1px solid #F2F2F2;
+border-radius: 7px;
+}
+
+.card-small-item {
+  /* Inside auto layout */
+
+  flex: none;
+  align-self: stretch;
+  flex-grow: 0;
+}
+
+.card-small-item > .img-overlay {
+  position: absolute;
+  height: 204px;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+
+  background: rgba(242, 201, 76, 0.78);
+  mix-blend-mode: multiply;
+  opacity: 0.5;
+}
+.card-small-item.image {
+  width: 161px;
+  height: 111px;
+}
+.card-small-item.title {
+  width: 161px;
+  height: 111px;
+
+  font-family: 'Noto Sans TC';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+
+  color: #333333;
+}
+.card {
+  border-style: solid;
+    border-width: thin;
+    border-color: #a5a5a5;
+}

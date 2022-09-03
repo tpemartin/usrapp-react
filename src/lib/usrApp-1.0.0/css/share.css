@@ -1,0 +1,43 @@
+.share{display:flex;flex-direction:column;justify-content:flex-end;align-items:center;padding:0px;position:absolute;width:63px;height:267px;}
+.share-shareSet{display:flex;flex-direction:column;align-items:flex-start;padding:0px;flex:none;order:0;flex-grow:0;margin:5px 0px;position:static;width:54px;height:208px;left:4.5px;top:0px;}
+.share-shareSet-email{display:flex;flex-direction:row;justify-content:center;align-items:center;padding:0px;flex:none;order:0;flex-grow:0;margin:2.5px 0px;position:static;width:54px;height:44.5px;left:calc(50% - 54px/2);top:calc(50% - 44.5px/2 - 81.75px);background:#F2994A;border:2px solid #E0E0E0;box-sizing:border-box;box-shadow:0px 7px 20px rgba(0, 0, 0, 0.25);border-radius:12px;}
+.share-shareSet-email-email{flex:none;order:0;flex-grow:0;position:static;width:28px;left:calc(50% - 28px/2);top:16.29%;bottom:16.29%;background:url(../img/email.svg);height:28px;}
+.share-shareSet-line{display:flex;flex-direction:row;justify-content:center;align-items:center;padding:0px;flex:none;order:1;flex-grow:0;margin:2.5px 0px;position:static;width:54px;height:44.5px;left:0px;top:54.5px;background:#27AE60;border:2px solid #E0E0E0;box-sizing:border-box;box-shadow:0px 7px 20px rgba(0, 0, 0, 0.25);border-radius:12px;}
+.share-shareSet-line-LINE{flex:none;order:0;flex-grow:0;position:static;width:54px;height:23px;left:0px;top:10.75px;font-family:'Roboto';font-style:normal;font-weight:400;font-size:20px;line-height:23px;text-align:center;color:white;}
+.share-shareSet-instagram{flex:none;order:2;flex-grow:0;margin:2.5px 0px;position:static;width:54px;height:44.5px;left:0px;top:109px;background:#BB6BD9;border:2px solid #E0E0E0;box-sizing:border-box;box-shadow:0px 7px 20px rgba(0, 0, 0, 0.25);border-radius:12px;}
+.share-shareSet-instagram-instagram{left:calc(50% - 30px/2 - 0.75px);top:17.78%;bottom:15.56%;background:center no-repeat url(../img/instagram.svg);height:39px;}
+.share-shareSet-facebook{flex:none;order:3;flex-grow:0;margin:2.5px 0px;position:static;width:54px;height:44.5px;left:0px;top:163.5px;background:#2D9CDB;border:2px solid #E0E0E0;box-sizing:border-box;box-shadow:0px 7px 20px rgba(0, 0, 0, 0.25);border-radius:12px;}
+.share-shareSet-facebook-facebook{left:calc(50% - 14.59px/2 - 0.04px);top:17.78%;bottom:15.56%;background:center no-repeat url(../img/facebook.svg);height:39px;}
+.share-shareFrame{display:flex;flex-direction:row;justify-content:center;align-items:center;padding:0px;flex:none;order:1;flex-grow:0;margin:5px 0px;position:static;width:43px;height:43px;left:7px;top:218px;
+}
+.share-shareFrame-shareBtn{display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0px;
+flex:none;order:0;flex-grow:0;position:static;width:43px;height:43px;left:0px;top:0px;
+border: 1px solid #BDBDBD;
+    box-sizing: border-box;
+    border-radius: 43px;}
+.btnCross {
+  background-image: url(../img/iconCross.svg) !important;
+}
+.share-shareFrame-shareBtn-img {
+  flex: none;
+    order: 0;
+    flex-grow: 0;
+    position: static;
+    width: 22px;
+    height: 22px;
+    left: 10.5px;
+    top: 10.5px;
+    background-image: url(../img/iconShare.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.share-shareFrame-shareBtn-iconShare{display:flex;flex-direction:row;justify-content:center;align-items:center;padding:4px 5px;left:22.2%;right:22.2%;top:21.21%;bottom:21.21%;background:center no-repeat url(../img/icon-share.svg);height:39px;}
+/*
+.Vector{position:absolute;visibility:hidden;left:6.25%;right:0.69%;top:18.75%;bottom:18.75%;background:#FFFFFF;}
+.Vector1{position:absolute;left:10.97%;right:10.95%;top:10.96%;bottom:10.96%;background:#FFFFFF;}
+.Vector2{position:absolute;left:0.03%;right:0.03%;top:0%;bottom:0%;background:#FEFEFE;}
+.Vector3{flex:none;order:0;align-self:stretch;flex-grow:1;margin:0px 10px;position:static;left:18.35%;right:18.35%;top:14.18%;bottom:14.18%;background:#000000;}*/

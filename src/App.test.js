@@ -1,8 +1,4 @@
-import { render, screen } from '@testing-library/react';
-import App from './App';
+import fetch from 'node-fetch';
+fetch("https://medium.com/feed/usrsocntpu")
+  .then((e)=> console.log(e))
 
-test('renders learn react link', () => {
-  render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
-});

@@ -1,0 +1,9 @@
+.card_thumbnail{display:flex;flex-direction:column;align-items:flex-start;padding:0px;box-sizing:border-box;position:relative;width:91px;height:232px;border:1px solid #E0E0E0;filter:drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));border-radius:12px;
+  margin: 0 16px 16px 16px;
+}
+.card_thumbnail-thumbnail{flex:none;order:0;flex-grow:0;margin:px;width:91px;height:143px;border-radius:12px 12px 0px 0px;}
+.IMG_2681 3{position:absolute;left:-46.15%;right:-46.15%;top:-11.18%;bottom:-34.55%;background:url(IMG_2681.jpg);}
+.card_thumbnail-division{flex:none;order:1;align-self:stretch;flex-grow:0;margin:px;height:0px;border:1px solid #BDBDBD;}
+.card_thumbnail-dateEvent{display:flex;flex-direction:column;align-items:flex-start;padding:3px 0px;flex:none;order:2;flex-grow:0;margin:px;width:91px;height:89px;background:#FFFFFF;border-radius:0px 0px 12px 12px;}
+.card_thumbnail-dateEvent-date{flex:none;order:0;align-self:stretch;flex-grow:0;margin:px;height:38px;font-family:'Macondo Swash Caps';font-style:normal;font-weight:400;font-size:32px;line-height:38px;text-align:center;color:#000000;}
+.card_thumbnail-dateEvent-event{flex:none;order:1;align-self:stretch;flex-grow:1;margin:px;height:45px;font-family:'Roboto';font-style:normal;font-weight:400;font-size:20px;line-height:23px;text-align:center;color:#000000;}

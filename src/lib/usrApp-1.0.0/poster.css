@@ -1,0 +1,61 @@
+.posterFront{display:flex;flex-direction:column;align-items:center;padding:15px 10px;position:absolute;width:341px;height:610px;left:17px;top:81px;background:#333333;border-radius:16px;}
+.posterFront-container{flex:none;order:0;flex-grow:0;margin:3.5px 0px;position:static;width:321px;height:451px;left:10px;top:15px;}
+.posterFront-container-image{position:absolute;height:443.2px;left:0px;right:-0.08px;top:0px;}
+.image 5{position:absolute;left:0%;right:1.05%;top:0%;bottom:0%;background:url(公民培訓-Figma.jpg);border:1px solid #4F4F4F;box-sizing:border-box;border-radius:0px;}
+.posterFront-titleDetail{display:flex;flex-direction:row;justify-content:center;align-items:flex-start;padding:0px 10px 14px;flex:none;order:1;flex-grow:0;margin:3.5px 0px;position:static;width:321px;height:122px;left:10px;top:473px;}
+.posterFront-titleDetail-container{display:flex;flex-direction:column;align-items:flex-start;padding:0px;flex:none;order:0;flex-grow:0;position:static;width:215px;height:108px;left:10px;top:0px;}
+.posterFront-titleDetail-container-date{flex:none;order:0;flex-grow:0;margin:0px 0px;position:static;width:114px;height:36px;left:0px;top:0px;font-family:'Noto Sans TC';font-style:normal;font-weight:700;font-size:24px;line-height:36px;display:flex;align-items:center;color:#F2F2F2;}
+.posterFront-titleDetail-container-title{flex:none;order:1;flex-grow:0;margin:0px 0px;position:static;width:215px;height:72px;left:0px;top:36px;font-family:'Noto Sans TC';font-style:normal;font-weight:400;font-size:24px;line-height:36px;display:flex;align-items:center;color:#FFFFFF;}
+.signup{display:flex;flex-direction:row;justify-content:center;align-items:center;padding:0px;position:absolute;width:43px;height:43px;right:45px;bottom:-36px;background:#333333;border:1px solid #BDBDBD;box-sizing:border-box;border-radius:43px;}
+.medical-icon:i-registration{flex:none;order:0;flex-grow:0;margin:0px 10px;position:static;width:21px;height:21px;left:11px;top:11px;}
+.正反面鍵{position:absolute;width:54px;height:54px;left:13px;top:55px;}
+.iconMore{position:absolute;width:54px;height:54px;left:0px;top:0px;}
+.add-to-calendar{position:absolute;left:24.07%;right:24.07%;top:24.07%;bottom:24.07%;}
+.add-to-calendar1{flex:none;order:0;flex-grow:0;margin:0px 10px;position:static;left:26.74%;right:26.74%;top:26.74%;bottom:26.74%;}
+.ant-design:instagram-outlined{position:absolute;width:30px;left:calc(50% - 30px/2 - 0.25px);top:17.78%;bottom:15.56%;}
+.ant-design:instagram-outlined1{position:absolute;width:30px;left:calc(50% - 30px/2 - 0.25px);top:17.78%;bottom:15.56%;}
+.bi:calendar{position:absolute;left:0%;right:0%;top:0%;bottom:0%;}
+.bi:calendar1{position:absolute;left:0%;right:0%;top:0%;bottom:0%;}
+.brandico:facebook{position:absolute;width:14.59px;left:calc(50% - 14.59px/2 + 0.46px);top:17.78%;bottom:15.56%;}
+.brandico:facebook1{position:absolute;width:14.59px;left:calc(50% - 14.59px/2 + 0.46px);top:17.78%;bottom:15.56%;}
+.carbon:email{flex:none;order:0;flex-grow:0;margin:0px 10px;position:static;width:28px;left:calc(50% - 28px/2);top:15.32%;bottom:15.32%;}
+.carbon:email1{flex:none;order:0;flex-grow:0;margin:0px 10px;position:static;width:28px;left:calc(50% - 28px/2);top:15.32%;bottom:15.32%;}
+.fe:google-plus{position:absolute;left:0%;right:0%;top:0%;bottom:0%;}
+.fe:google-plus1{position:absolute;left:0%;right:0%;top:0%;bottom:0%;}
+.fluent:share-ios-48-filled{display:flex;flex-direction:row;justify-content:center;align-items:center;padding:4px 5px;flex:none;order:0;flex-grow:0;margin:0px 10px;position:static;left:15.12%;right:15.12%;top:17.44%;bottom:17.44%;}
+.fluent:share-ios-48-filled1{display:flex;flex-direction:row;justify-content:center;align-items:center;padding:4px 5px;flex:none;order:0;flex-grow:0;margin:0px 10px;position:static;left:15.12%;right:15.12%;top:17.44%;bottom:17.44%;}
+.Frame 31{flex:none;order:0;flex-grow:0;margin:10px 0px;position:static;display:none;width:63px;height:203px;left:0px;top:0px;}
+.Frame 311{flex:none;order:0;flex-grow:0;margin:10px 0px;position:static;display:none;width:63px;height:203px;left:0px;top:0px;}
+.Frame 43{display:flex;flex-direction:row;justify-content:center;align-items:center;padding:0px;flex:none;order:1;flex-grow:0;margin:10px 0px;position:static;width:43px;height:43px;left:10px;top:224px;border:1px solid #BDBDBD;box-sizing:border-box;border-radius:43px;}
+.Frame 431{display:flex;flex-direction:row;justify-content:center;align-items:center;padding:0px;flex:none;order:1;flex-grow:0;margin:10px 0px;position:static;width:43px;height:43px;left:10px;top:224px;background:#333333;border:1px solid #BDBDBD;box-sizing:border-box;border-radius:43px;}
+.LINE{flex:none;order:0;flex-grow:0;margin:0px 10px;position:static;width:54px;height:23px;left:4.5px;top:10.12px;font-family:'Roboto';font-style:normal;font-weight:400;font-size:20px;line-height:23px;text-align:center;color:#FFFFFF;}
+.LINE1{flex:none;order:0;flex-grow:0;margin:0px 10px;position:static;width:54px;height:23px;left:4.5px;top:10.12px;font-family:'Roboto';font-style:normal;font-weight:400;font-size:20px;line-height:23px;text-align:center;color:#FFFFFF;}
+.share{display:flex;flex-direction:row;justify-content:center;align-items:center;padding:0px;position:absolute;width:63px;height:43.25px;left:calc(50% - 63px/2);top:calc(50% - 43.25px/2 - 79.88px);background:#F2994A;border:2px solid #E0E0E0;box-sizing:border-box;box-shadow:0px 7px 20px rgba(0, 0, 0, 0.25);border-radius:12px;}
+.share1{display:flex;flex-direction:row;justify-content:center;align-items:center;padding:0px;position:absolute;width:63px;height:43.25px;left:0px;top:53.25px;background:#27AE60;border:2px solid #E0E0E0;box-sizing:border-box;box-shadow:0px 7px 20px rgba(0, 0, 0, 0.25);border-radius:12px;}
+.share2{position:absolute;width:63px;height:43.25px;left:0px;top:106.5px;background:#BB6BD9;border:2px solid #E0E0E0;box-sizing:border-box;box-shadow:0px 7px 20px rgba(0, 0, 0, 0.25);border-radius:12px;}
+.share3{position:absolute;width:63px;height:43.25px;left:0px;top:159.75px;background:#2D9CDB;border:2px solid #E0E0E0;box-sizing:border-box;box-shadow:0px 7px 20px rgba(0, 0, 0, 0.25);border-radius:12px;}
+.share4{display:flex;flex-direction:row;justify-content:center;align-items:center;padding:0px;position:absolute;width:63px;height:43.25px;left:calc(50% - 63px/2);top:calc(50% - 43.25px/2 - 79.88px);background:#F2994A;border:2px solid #E0E0E0;box-sizing:border-box;box-shadow:0px 7px 20px rgba(0, 0, 0, 0.25);border-radius:12px;}
+.share5{display:flex;flex-direction:row;justify-content:center;align-items:center;padding:0px;position:absolute;width:63px;height:43.25px;left:0px;top:53.25px;background:#27AE60;border:2px solid #E0E0E0;box-sizing:border-box;box-shadow:0px 7px 20px rgba(0, 0, 0, 0.25);border-radius:12px;}
+.share6{position:absolute;width:63px;height:43.25px;left:0px;top:106.5px;background:#BB6BD9;border:2px solid #E0E0E0;box-sizing:border-box;box-shadow:0px 7px 20px rgba(0, 0, 0, 0.25);border-radius:12px;}
+.share7{position:absolute;width:63px;height:43.25px;left:0px;top:159.75px;background:#2D9CDB;border:2px solid #E0E0E0;box-sizing:border-box;box-shadow:0px 7px 20px rgba(0, 0, 0, 0.25);border-radius:12px;}
+.Vector{position:absolute;left:6.25%;right:0.69%;top:18.75%;bottom:18.75%;background:#FFFFFF;}
+.Vector1{position:absolute;left:10.97%;right:10.95%;top:10.96%;bottom:10.96%;background:#FFFFFF;}
+.Vector2{position:absolute;left:0.03%;right:0.03%;top:0%;bottom:0%;background:#FEFEFE;}
+.Vector3{flex:none;order:0;align-self:stretch;flex-grow:1;margin:0px 10px;position:static;left:16.67%;right:16.67%;top:14.29%;bottom:14.29%;background:#FEFEFE;}
+.Vector4{position:absolute;left:0%;right:0%;top:0%;bottom:0%;background:#000000;}
+.Vector5{position:absolute;left:8.5%;right:8.17%;top:35%;bottom:11.97%;background:#000000;}
+.Vector6{position:absolute;left:2.11%;right:2.51%;top:0.85%;bottom:0%;background:#FFFFFF;}
+.Vector7{position:absolute;left:30.37%;right:51.94%;top:44.48%;bottom:38.77%;background:rgba(244, 244, 244, 0.71);}
+.Vector8{position:absolute;left:0%;right:0%;top:0%;bottom:0%;background:#FEFEFE;}
+.Vector9{position:absolute;left:8.5%;right:8.17%;top:35%;bottom:11.97%;background:#FEFEFE;}
+.Vector10{position:absolute;left:6.25%;right:0.69%;top:18.75%;bottom:18.75%;background:#FFFFFF;}
+.Vector11{position:absolute;left:10.97%;right:10.95%;top:10.96%;bottom:10.96%;background:#FFFFFF;}
+.Vector12{position:absolute;left:0.03%;right:0.03%;top:0%;bottom:0%;background:#FEFEFE;}
+.Vector13{flex:none;order:0;align-self:stretch;flex-grow:1;margin:0px 10px;position:static;left:16.67%;right:16.67%;top:14.29%;bottom:14.29%;background:#FEFEFE;}
+.Vector14{position:absolute;left:0%;right:0%;top:0%;bottom:0%;background:#FFFFFF;}
+.分享按鍵{display:flex;flex-direction:column;justify-content:flex-end;align-items:center;padding:0px;position:absolute;width:63px;height:267px;right:0px;bottom:-1px;}
+.分享按鍵1{display:flex;flex-direction:column;justify-content:flex-end;align-items:center;padding:0px;position:absolute;visibility:hidden;width:54px;height:43px;right:0px;bottom:0px;}
+.加到行事曆{position:absolute;width:54px;height:54px;right:86px;bottom:0px;background:#FFFFFF;opacity:0.7;border:1px solid #BDBDBD;box-sizing:border-box;border-radius:54px;}
+.加到行事曆1{display:flex;flex-direction:row;justify-content:center;align-items:center;padding:0px;position:absolute;width:43px;height:43px;right:-5px;bottom:-49px;background:#333333;border:1px solid #BDBDBD;box-sizing:border-box;border-radius:43px;}
+.月曆定位bar{position:absolute;visibility:hidden;width:140px;height:0px;right:-0.1px;top:443.26px;}
+.月曆定位bar1{flex:none;order:1;flex-grow:0;margin:0px 5px;position:static;width:81px;height:0px;right:10px;top:0px;}

@@ -1,0 +1,11 @@
+$(function(){
+  el_shares=document.querySelector("div.share-shareSet");
+  $shares=$(el_shares);
+  el_shareBtn=document.querySelector("div.share-shareFrame-shareBtn-img");
+  $shareBtn=$(el_shareBtn);
+  $shareBtn.click(toggle_shares);
+});
+toggle_shares=function(){
+  $shareBtn.toggleClass("btnCross");
+  $shares.slideToggle();
+};

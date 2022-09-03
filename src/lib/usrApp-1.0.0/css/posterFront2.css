@@ -1,0 +1,85 @@
+.posterFront{display:flex;flex-direction:column;align-items:center;
+padding:0px 10px;
+flex:none;order:0;flex-grow:0;margin:0px 10px;position:static;
+/*width:340.08px;*/
+  max-width: 400px;
+height:634.2px;left:17px;top:58px;background:#333333;border-radius:16px;}
+.posterFront-container{flex:none;order:0;flex-grow:1;
+  /*margin:1.66666666666667px 0px;*/
+  position:static;
+  /*width:320.08px;*/
+  max-height: 472px;
+  height:436.2px;left:10px;top:15px;
+  align-self: stretch;
+
+}
+.posterFront-container-image{height:443.2px;left:0px;right:0px;top:0px;
+/*-webkit-background-size: contain;*/
+  background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.posterFront-fixbar{flex:none;order:1;align-self:flex-end;flex-grow:0;margin:1.66666666666667px 0px;position:absolute;height:0.000001px;top:456.2px;}
+
+.posterFront-fixbar > div.btnCalendar {
+  right: 49.08px;
+bottom: -44.8px;
+}
+.posterFront-fixbar > div.btnSignup{
+  right: 100px;
+bottom: -44.8px;
+}
+.posterFront-fixbar > div.share{
+  right: -9.45px;
+bottom: -48.87px;
+}
+.signup{display:flex;flex-direction:row;justify-content:center;align-items:center;padding:0px;position:absolute;width:43px;height:43px;left:204.53px;top:5.87px;border:1px solid #BDBDBD;box-sizing:border-box;border-radius:43px;}
+.posterFront-titleDetail{display:flex;flex-direction:row;justify-content:space-between;align-items:flex-end;padding:0px 10px 14px;flex:none;order:2;flex-grow:0;margin:5px 0px;position:static;height:158px;left:10px;top:461.2px;align-self:stretch;}
+.posterFront-titleDetail-title{flex:none;order:0;flex-grow:1;margin:0px auto;position:static;width:206.08px;height:108px;left:10px;top:36px;font-family:'Noto Sans TC';font-style:normal;font-weight:400;font-size:24px;line-height:36px;display:flex;align-items:center;color:#FFFFFF;}
+.posterFront-titleDetail-detail{flex:none;order:1;flex-grow:0;margin:0px auto;position:static;width:54px;height:54px;left:256.08px;top:90px;background:no-repeat center url(../img/iconMore.svg);background-size:contain;}
+.posterBack-titleDetail-return {
+  flex:none;order:1;flex-grow:0;margin:0px auto;position:static;width:54px;height:54px;left:256.08px;top:90px;background:no-repeat center url(../img/iconReturn.svg);background-size:contain;
+}
+.posterBack-container {
+  max-height: 472px;
+  position: relative;
+/*width: 320.08px;*/
+height: 436.2px;
+/*left: 10px;*/
+top: 15px;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 1;
+/*margin: 5px 0px;*/
+}
+.posterBack-container-text {
+  position: absolute;
+height: 434px;
+left: 0px;
+right: 4.08px;
+top: 0.13px;
+overflow-y: scroll;
+
+background: #FFFFFF;
+}
+.posterContext {
+  position: absolute;
+left: 5.99%;
+right: 2.82%;
+top: 2.41%;
+bottom: 18.99%;
+
+font-family: 'Noto Sans TC';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+
+color: #000000;
+}
