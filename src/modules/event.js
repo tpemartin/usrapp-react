@@ -22,7 +22,7 @@ function fillInEvents(){
 
 //helpers
 function footer(element){
-  return `<div class="fixed-bottom">
+  return `<div class="fixed-bottom" style="padding-bottom:15px">
   <div class="row">
     <div class="mx-auto">
        ${element}
