@@ -14,11 +14,35 @@ function fillInEvents(){
         <div class="col">
         ${assembleSlidesSnippet()}
         </div>
-    <div>`
+    <div>
+    ${footer(eventButtons())}
+    `
   )
 }
 
 //helpers
+function footer(element){
+  return `<div class="fixed-bottom">
+  <div class="row">
+    <div class="mx-auto">
+       ${element}
+    </div>
+    </div>
+  </div>`
+}
+function eventButtons(){
+  return `<div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+  <div class="btn-group mr-2" role="group" aria-label="First group">
+    <button type="button" class="btn btn-secondary">詳細內容</button>
+  </div>
+  <div class="btn-group mr-2" role="group" aria-label="Second group">
+    <button type="button" class="btn btn-secondary">分享</button>
+  </div>
+  <div class="btn-group" role="group" aria-label="Third group">
+    <button type="button" class="btn btn-secondary">加入行事曆</button>
+  </div>
+</div>`
+}
 
 function assembleSlidesSnippet(){
     let accumulateSlides=slidesComponent();
