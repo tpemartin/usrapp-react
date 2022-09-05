@@ -24,13 +24,13 @@ function fillInEvents(){
       `
       <div class="row justify-content-center">
           <div class="col-sm-12 col-md-6 col-lg-5">
-          ${eventCard().modal}
+          ${eventModal().modal}
           
           </div>
           <div class="fixed-bottom" style="padding-bottom:15px">
             <div class="row">
               <div class="mx-auto">
-              ${eventCard().button}
+              ${eventModal().button}
               </div>
               </div>
             </div>
@@ -55,7 +55,7 @@ function eventDecision(){
 }
 
 
-function eventCard(){
+function eventModal(){
   return {
     "button": `
   <!-- Button trigger modal -->
