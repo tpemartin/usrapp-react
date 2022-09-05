@@ -10,7 +10,7 @@ $(function(){
 
 function fillInEvents(){
   $("#app").append(
-    `<div class="row>
+    `<div class="row">
         <div class="col">
         ${assembleSlidesSnippet()}
         </div>

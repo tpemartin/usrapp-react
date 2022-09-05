@@ -4,6 +4,7 @@
   background-size: contain;
   background-position: center;
 }
+
 button.carousel-control-next, button.carousel-control-prev {
     background-color: transparent;
     border-color: transparent;
@@ -34,4 +35,10 @@ button.carousel-control-next, button.carousel-control-prev {
   }
   .card-text {
   font-family: 'Noto Serif TC';
+  }
+  .btsm {
+      padding: .25rem .5rem !important;
+      font-size: .875rem !important;
+      line-height: 1.5 !important;
+      border-radius: .2rem !important;
   }
