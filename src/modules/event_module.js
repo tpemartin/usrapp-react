@@ -1,3 +1,5 @@
+
+
 //helpers
 function footer(element){
     return `<div class="fixed-bottom" style="padding-bottom:15px">

@@ -20,26 +20,98 @@ $(function(){
   */
 
 function fillInEvents(){
-    $("#app").append(
-      `
-      <div class="row justify-content-center">
-          <div class="col-sm-12 col-md-6 col-lg-5">
-          ${eventModal().modal}
-          
-          </div>
-          <div class="fixed-bottom" style="padding-bottom:15px">
-            <div class="row">
-              <div class="mx-auto">
-              ${eventModal().button}
-              </div>
-              </div>
-            </div>
-      <div>
-      `
+
+  fetch("https://script.google.com/macros/s/AKfycbxftu_E6AQP06G-ekxRK2vDawfJbSp70PtaakYEd0zE4GLL1xSrCYmZsD-y-OKfJ-X7qg/exec")
+  .then(e=>e.json())
+  .then((j)=> {
+    console.log(j)
+    eventJson=j
+  return j})
+  .then((eventJson)=>{
+    let ev=eventJson[1]
+    let evModal=eventModal(title=ev['活動名稱'], time=eventTime(ev), 
+    content=ev['活動內容簡述'], _location=ev['地點'], organizer=ev['主辦單位細節']
     )
+    return evModal
+  })
+  .then(
+    (evModal)=>{
+
+      $("#app").append(
+        `
+        <div class="row justify-content-center">
+            <div class="col-sm-12 col-md-6 col-lg-5">
+            ${evModal.modal}
+            
+            </div>
+            <div class="fixed-bottom" style="padding-bottom:15px">
+              <div class="row">
+                <div class="mx-auto">
+                ${evModal.button}
+                </div>
+                </div>
+              </div>
+        <div>
+        `
+      )
+    }
+  )
+   
+    
   }
 
 //helpers
+
+function eventTime(ev){
+  let formatCase=getFormatCase(ev)
+  switch(formatCase.formatCase){
+    case "a":
+       return formatCase.activityTime.A
+    case "ab":
+      return `${formatCase.activityTime.A} ${formatCase.activityTime.B}`
+
+    case "ay":
+      return `${formatCase.activityTime.A} 到 ${formatCase.activityTime.Y}`
+
+    case "abz":
+      return `${formatCase.activityTime.A} ${formatCase.activityTime.B}-${formatCase.activityTime.Z}`
+
+    case "abyz":
+      return `${formatCase.activityTime.A} 到 ${formatCase.activityTime.Y}
+      ${ev["頻率"]} ${formatCase.activityTime.B}-${formatCase.activityTime.Z}`
+}
+
+
+}
+function ymd(timeString){
+  let startD=new Date(timeString)
+  return startD.getFullYear()+'.'+startD.getMonth()+"."+startD.getDay()
+}
+function hm(timeString){
+  let startD=new Date(timeString)
+  let hmString=startD.toLocaleTimeString().replace(/:[0-9][0-9] (?=[PA])/,"")
+  return hmString
+}
+function getFormatCase(ev){
+  var formatCaseMap= {"日期(1)": "a","時間(1)": "b","日期(2)": "y","時間(2)": "z",}
+
+  var formatCase=""
+  let activityTime={}
+  if(ev["日期(1)"]!==""){
+    activityTime.A=ymd(ev['日期(1)']) 
+    formatCase=formatCase+formatCaseMap["日期(1)"]}
+  if(ev["時間(1)"]!==""){ 
+    activityTime.B=hm(ev['時間(1)']) 
+    formatCase=formatCase+formatCaseMap["時間(1)"]}
+  if(ev["日期(2)"]!==""){ 
+    activityTime.Y=ymd(ev['日期(2)']) 
+    formatCase=formatCase+formatCaseMap["日期(2)"]}
+  if(ev["時間(2)"]!==""){ 
+    activityTime.Z=hm(ev['時間(1)']) 
+    formatCase=formatCase+formatCaseMap["時間(2)"]}
+
+  return { formatCase: formatCase, activityTime: activityTime }
+}
 
 function eventDecision(){
   return `
@@ -55,7 +127,10 @@ function eventDecision(){
 }
 
 
-function eventModal(){
+function eventModal(title="北大玩具節", time="2018.11.10", content="現場凡攜帶項二手玩具或2張111年1-4月發票. 報名方式: 至服務台捐出,即可領取闖關卡入場券。(絨毛娃娃不在回收範圍裡喔!)",
+_location="...", organizer="..."){
+
+
   return {
     "button": `
   <!-- Button trigger modal -->
@@ -68,18 +143,18 @@ function eventModal(){
     <div class="modal-dialog  modal-dialog-centered">
       <div class="modal-content">
         <div class="modal-header">
-          <h3 class="modal-title">北大玩具節</h3>
+          <h3 class="modal-title">${title}</h3>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
         <div class="modal-header">
-          <h4 class="modal-title">2018.11.10</h4>
+          <h4 class="modal-title">${time}</h4>
         </div>
         <div class="modal-body">
           ${tabNav()}
         <br>
-          ${tabContent()}
+          ${tabContent(content, _location, organizer)}
         </div>
         <div class="modal-footer justify-content-center">
           ${eventDecision()}
@@ -103,12 +178,12 @@ function tabNav(){
 `
 }
 
-function tabContent(){
+function tabContent(content, location, organizer){
   return `
   <div class="tab-content" id="nav-tabContent" style="height:60vh;">
-  <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">現場凡攜帶項二手玩具或2張111年1-4月發票. 報名方式: 至服務台捐出,即可領取闖關卡入場券。(絨毛娃娃不在回收範圍裡喔!)</div>
-  <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">...</div>
-  <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">...</div>
+  <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">${content}</div>
+  <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">${location}</div>
+  <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">${organizer}</div>
 </div>
   `
 }
