@@ -21,13 +21,9 @@ $(function(){
 
 function fillInEvents(){
 
-  fetch("https://script.google.com/macros/s/AKfycbxftu_E6AQP06G-ekxRK2vDawfJbSp70PtaakYEd0zE4GLL1xSrCYmZsD-y-OKfJ-X7qg/exec")
-  .then(e=>e.json())
-  .then((j)=> {
-    console.log(j)
+  fetchEventJson()
+  .then((j)=>{
     eventJson=j
-  return j})
-  .then((eventJson)=>{
     let ev=eventJson[1]
     let evModal=eventModal(title=ev['活動名稱'], time=eventTime(ev), 
     content=ev['活動內容簡述'], _location=ev['地點'], organizer=ev['主辦單位細節']

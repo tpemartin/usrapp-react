@@ -1,11 +1,12 @@
 //import fetch from 'node-fetch'
 
+async function fetchEventJson(){
+  eventAPI="https://script.google.com/macros/s/AKfycbwAGY2_0XkzEBcOppoV0LxOsUr5hJV7VgBs7IFDE3rzzGp2ieECXy0Qp2vvEIJ5Jgwq_g/exec"
+  return await fetch(eventAPI).then(e=>e.json())
+}
 
 
-fetch("https://script.google.com/macros/s/AKfycbxftu_E6AQP06G-ekxRK2vDawfJbSp70PtaakYEd0zE4GLL1xSrCYmZsD-y-OKfJ-X7qg/exec")
-  .then(e=>e.json())
-  .then((j)=> {
-    console.log(j)
-    eventJson=j})
+
+
 
 

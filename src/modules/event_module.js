@@ -10,7 +10,7 @@ function footer(element){
       </div>
     </div>`
   }
-  function eventButtons(){
+function eventButtons(){
     return `<div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
     <div class="btn-group mr-2" role="group" aria-label="First group">
       <button type="button" class="btn btn-secondary">詳細內容</button>

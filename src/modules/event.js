@@ -35,15 +35,30 @@ function eventButtons(){
   <div class="btn-group mr-2" role="group" aria-label="First group">
     <button type="button" class="btn btn-secondary">詳細內容</button>
   </div>
-  <div class="btn-group mr-2" role="group" aria-label="Second group">
-    <button type="button" class="btn btn-secondary">分享</button>
+  <div class="share-group">
+  <div class="share-group" id="share-icon" style="display:none">
+  ${share()}
+  ${share()}
+  </div>
+  <div class="btn-group mr-2" role="group" aria-label="Second group">  
+  <button type="button" class="btn btn-secondary">分享</button>
+  </div>
   </div>
   <div class="btn-group" role="group" aria-label="Third group">
     <button type="button" class="btn btn-secondary">加入行事曆</button>
   </div>
+  
 </div>`
 }
-
+function share(){
+  return `  <div class="btn-group mr-2" role="group" aria-label="Second group">  
+  <button type="button" class="btn btn-secondary">分享2</button>
+  </div>`
+}
+function lineShare(){
+  return `<div class="line-it-button" data-lang="en" data-type="share-b" data-env="REAL" data-url="https://tpemartin.github.io/usrapp-react/src/demo_storyPage.html" data-color="default" data-size="small" data-count="false" data-ver="3" style="display: none;"></div>
+  <script src="https://www.line-website.com/social-plugins/js/thirdparty/loader.min.js" async="async" defer="defer"></script>`
+}
 function assembleSlidesSnippet(){
     let accumulateSlides=slidesComponent();
     return `<div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
@@ -82,7 +97,7 @@ function slidesComponent(imgs = [
       )
     
     
-    
+    cx
     let accumulateSlides = slides.reduce((accumulateElement, e)=>{
         return [
             accumulateElement[0]+e[0],

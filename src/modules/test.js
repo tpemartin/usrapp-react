@@ -1,33 +1,15 @@
-var eventJson=[{},{
-    "時間戳記": "2022-09-05T04:55:00.911Z",
-    "電子郵件地址": "tpemartin@gmail.com",
-    "活動名稱": "北大玩具節",
-    "日期(1)": "2022-09-23T16:00:00.000Z",
-    "時間(1)": "1899-12-30T09:00:00.000Z",
-    "地點": "行政大樓前廣場",
-    "主辦單位細節": "USR辦公室",
-    "活動內容簡述": "沒有教育部的大學社會責任計畫，也就不會有「北大玩具節」；而沒有大家的協力合作，「北大玩具節」也無法圓滿熱烈舉辦。尤其天公作美、風雨暫歇，12月2日週六上午的景象是--玩具回收再運用，親子歡樂人來瘋，師生社團共協力，大學社區展共融。\n\n經過三個月的籌畫以及六次的協調會議，由社科院USR計畫與新北市玩具銀行合作舉辦的首屆「北大玩具節」，在社工系游以安老師兒童療癒課程、北大學生會、多元服務社、伊甸基金會志工隊、以及北大策進會的協辦之下，終於在三峽校區商學院前廣場熱情展開。",
-    "活動海報網址": "https://www.ntpu.edu.tw/college/e4/files/e4_announce/20181107125836.jpg",
-    "活動網址（若無免填）": "",
-    "活動海報檔": "",
-    "日期(2)": "",
-    "時間(2)": "",
-    "頻率": ""
-  }]
+import fetch from "node-fetch";
 
-var ev=eventJson[1]
+fetch("https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fmedium.com%2Ffeed%2F%40eaglemt2019")
+  .then((response)=>response.json())
+  .then(promiseCheck) //.then(e=>console.log(e))
 
 
 
-switch(formatCase){
-    case "a":
 
-    case "ab":
-
-    case "ay":
-
-    case "abz":
-
-    case "abyz":
+function promiseCheck(e){
+  console.log(e)
+  et=e
+  
 }
 
