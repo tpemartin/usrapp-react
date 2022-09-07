@@ -1,4 +1,12 @@
 
+class eventJson {
+    constructor(ev){
+        this.id=ev
+    }
+
+
+
+}
 
 
 components[0]={

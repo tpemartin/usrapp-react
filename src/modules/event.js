@@ -97,7 +97,7 @@ function slidesComponent(imgs = [
       )
     
     
-    cx
+    
     let accumulateSlides = slides.reduce((accumulateElement, e)=>{
         return [
             accumulateElement[0]+e[0],
