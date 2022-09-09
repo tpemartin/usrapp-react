@@ -43,7 +43,7 @@ function fillInEvents(){
             <div class="fixed-bottom" style="padding-bottom:15px">
               <div class="row">
                 <div class="mx-auto">
-                ${evModal.button}
+                ${eventModalButton()}
                 </div>
                 </div>
               </div>
@@ -57,6 +57,51 @@ function fillInEvents(){
   }
 
 //helpers
+function eventModal(title="北大玩具節", time="2018.11.10", content="現場凡攜帶項二手玩具或2張111年1-4月發票. 報名方式: 至服務台捐出,即可領取闖關卡入場券。(絨毛娃娃不在回收範圍裡喔!)",
+_location="...", organizer="..."){
+
+
+  return {
+    "button": `
+  <!-- Button trigger modal -->
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+    詳細內容
+  </button>`,
+    "modal": 
+  `<!-- Modal -->
+  <div class="modal fade text-center" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog  modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 class="modal-title">${title}</h3>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-header">
+          <h4 class="modal-title">${time}</h4>
+        </div>
+        <div class="modal-body">
+          ${tabNav()}
+        <br>
+          ${tabContent(content, _location, organizer)}
+        </div>
+        <div class="modal-footer justify-content-center">
+          ${eventDecision()}
+        </div>
+      </div>
+    </div>
+  </div>
+  `}
+}
+function eventModalButton(){
+  return `
+  <!-- Button trigger modal -->
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+    詳細內容
+  </button>`
+}
+
 
 function eventTime(ev){
   let formatCase=getFormatCase(ev)
@@ -123,43 +168,6 @@ function eventDecision(){
 }
 
 
-function eventModal(title="北大玩具節", time="2018.11.10", content="現場凡攜帶項二手玩具或2張111年1-4月發票. 報名方式: 至服務台捐出,即可領取闖關卡入場券。(絨毛娃娃不在回收範圍裡喔!)",
-_location="...", organizer="..."){
-
-
-  return {
-    "button": `
-  <!-- Button trigger modal -->
-  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-    詳細內容
-  </button>`,
-    "modal": 
-  `<!-- Modal -->
-  <div class="modal fade text-center" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog  modal-dialog-centered">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h3 class="modal-title">${title}</h3>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-header">
-          <h4 class="modal-title">${time}</h4>
-        </div>
-        <div class="modal-body">
-          ${tabNav()}
-        <br>
-          ${tabContent(content, _location, organizer)}
-        </div>
-        <div class="modal-footer justify-content-center">
-          ${eventDecision()}
-        </div>
-      </div>
-    </div>
-  </div>
-  `}
-}
 function tabNav(){
   return ` 
   

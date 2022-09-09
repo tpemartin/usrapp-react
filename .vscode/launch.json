@@ -6,13 +6,13 @@
     "configurations": [
         
         {
-            "type": "pwa-node",
+            "type": "node",
             "request": "launch",
             "name": "Launch Program",
             "skipFiles": [
                 "<node_internals>/**"
             ],
-            "program": "${workspaceFolder}/src/modules/test.js"
+            "program": "${workspaceFolder}/src/modules/testModule.js"
         }
     ]
 }

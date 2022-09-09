@@ -5,4 +5,3 @@ function slidesComponent(ev){
     ev.img
 }
 
-function
