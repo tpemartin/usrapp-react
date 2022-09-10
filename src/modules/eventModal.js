@@ -1,75 +1,40 @@
-import createStoryPageContent from "./modules/page_story.js";
-import fetchEventJson, {carousel, eventPageContent, clickGetElement} from "./modules/page_event.js";
-import { promiseCheck} from "./modules/Debug.js";
 
-$(function(){
-    // sidebar storyPage click
-    $("#storyPage").click(fillInStoryPage)
-    // sidebar eventPage click 
-    $("#eventPage").click(fillInEventPage)
-   })
+function fillInEvents(){
 
-function fillInEventPage(){
-    fetchEventJson()
-      .then((eventJson)=>{
-        let events = eventJson
-            .slice(1, eventJson.length+1) //remove title row
-        return carousel(events)
-        })
-      .then((eventCarousel) => {
-        $("#app").empty().append(
-           eventPageContent(eventCarousel)
-        )
-        window.events=eventCarousel.events
-        window.eventMap=eventCarousel.eventMap
-        clickGetElement(getClickEvent)
-        $("body").prepend(`<div id="modal" class="row justify-content-center"></div>`)
-      })
-}
-
-function fillInStoryPage(){
-    fetch("https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fmedium.com%2Ffeed%2F%40eaglemt2019")
-    .then((response) => response.json()) // without {} the value will be the succes return
-    .then((data) => {
-        return createStoryPageContent(data.items)
-    })
-    .then((data)=>{
-        let htmlContent=data.reduce((s,e)=>s+e)
-        $("#app").empty().append(`
-        <div class="row">
-        ${htmlContent}
-        </div>
-        `)
-    })
-
-}
- 
-//helpers
-
-function getClickEvent(e){
-    console.log(e)
-    let eventid=$(e.currentTarget).data().eventid
-    let eventIndex=eventMap[eventid]
-    let targetEvent=events[eventIndex]
-    console.log(targetEvent)
-    let evModal=eventModal(targetEvent['活動名稱'], eventTime(targetEvent), 
-    targetEvent['活動內容簡述'], targetEvent['地點'], targetEvent['主辦單位細節']
+  fetchEventJson()
+  .then((j)=>{
+    eventJson=j
+    let ev=eventJson[1]
+    let evModal=eventModal(title=ev['活動名稱'], time=eventTime(ev), 
+    content=ev['活動內容簡述'], _location=ev['地點'], organizer=ev['主辦單位細節']
     )
-    console.log(evModal)
-    $("#modal").empty()
-    $("#modal").append(
+    return evModal
+  })
+  .then(
+    (evModal)=>{
+
+      $("#app").append(
         `
+        <div class="row justify-content-center">
             <div class="col-sm-12 col-md-6 col-lg-5">
             ${evModal.modal}
-            </div>
             
-              
+            </div>
+            <div class="fixed-bottom" style="padding-bottom:15px">
+              <div class="row">
+                <div class="mx-auto">
+                ${eventModalButton()}
+                </div>
+                </div>
+              </div>
+        <div>
         `
       )
-    $("#exampleModal").modal("show")  
-    return targetEvent
-}
-
+    }
+  )
+   
+    
+  }
 
 //helpers
 function eventModal(title="北大玩具節", time="2018.11.10", content="現場凡攜帶項二手玩具或2張111年1-4月發票. 報名方式: 至服務台捐出,即可領取闖關卡入場券。(絨毛娃娃不在回收範圍裡喔!)",
@@ -79,7 +44,7 @@ _location="...", organizer="..."){
   return {
     "button": `
   <!-- Button trigger modal -->
-  <button id="eventModal" style="display:none" type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
     詳細內容
   </button>`,
     "modal": 
@@ -112,7 +77,7 @@ _location="...", organizer="..."){
 function eventModalButton(){
   return `
   <!-- Button trigger modal -->
-  <button id="eventDetailBtn" type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
     詳細內容
   </button>`
 }
