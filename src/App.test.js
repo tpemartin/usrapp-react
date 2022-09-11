@@ -2,7 +2,6 @@ import createStoryPageContent from "./modules/page_story.js";
 import fetchEventJson, 
   {carousel, eventPageContent, clickGetElement,
     eventModal, eventTime} from "./modules/page_event.js";
-import { promiseCheck} from "./modules/Debug.js";
 
 $(function(){
     // sidebar storyPage click
