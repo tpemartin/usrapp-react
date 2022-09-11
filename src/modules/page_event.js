@@ -222,8 +222,7 @@ function getFormatCase(ev){
   return { formatCase: formatCase, activityTime: activityTime }
 }
 function facebookShare(){
-  return `<div class="fb-share-button" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button_count" data-size="small"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share</a></div>`
-}
+  return `<div class="fb-share-button" data-href="https://tpemartin.github.io/usrapp-react/src/index-test.html?id=FD3318CB" data-layout="button_count" data-size="small"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Ftpemartin.github.io%2Fusrapp-react%2Fsrc%2Findex-test.html%3Fid%3DFD3318CB&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share</a></div>`}
 function eventDecision(calendarHtml,registerHtml){
   return `
   <div class="btn-toolbar justify-content-center" role="toolbar" aria-label="Toolbar with button groups">
