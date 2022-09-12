@@ -4,17 +4,20 @@ import fetchEventJson,
     eventModal, eventTime} from "./modules/page_event.js";
 
 $(function(){
+    //fillInEventPage()
     // sidebar storyPage click
-    $("#storyPage").click(fillInStoryPage)
-    $("#storyPage").on("tap", fillInStoryPage)
+    //$("#storyPage").click(fillInStoryPage)
+    //$("#storyPage").on("tap", fillInStoryPage)
     // sidebar eventPage click 
-    $("#eventPage").click(fillInEventPage)
-    $("#eventPage").on("touchstart", fillInEventPage)
-    $("#eventPage").on("tap", ()=>{alert("tap")})
+    //$("#eventPage").click(fillInEventPage)
+    //$("#eventPage").on("touchstart", fillInEventPage)
+    //$("#eventPage").on("tap", ()=>{alert("tap")})
     const el = document.getElementById('eventPage');
-    el.addEventListener(
-      "touchstart", ()=>{alert("tap")}
-    )
+    // el.addEventListener(
+    //   "touchstart", ()=>{alert("tap")
+    //   fillInEventPage()
+    // }
+    // )
     let id=getQueryParameter()
     if(id) eventPageForShare(id)
    })
