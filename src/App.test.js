@@ -9,8 +9,12 @@ $(function(){
     $("#storyPage").on("tap", fillInStoryPage)
     // sidebar eventPage click 
     $("#eventPage").click(fillInEventPage)
-    $("#eventPage").on("tap", fillInEventPage)
-
+    $("#eventPage").on("touchstart", fillInEventPage)
+    $("#eventPage").on("tap", ()=>{alert("tap")})
+    const el = document.getElementById('eventPage');
+    el.addEventListener(
+      "touchstart", ()=>{alert("tap")}
+    )
     let id=getQueryParameter()
     if(id) eventPageForShare(id)
    })

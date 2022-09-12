@@ -19,6 +19,8 @@ export default async function fetchEventJson(){
   }).then((e)=>{
     alert("success")
     return e
+  },(e)=>{
+    alert(JSON.stringify(e))
   })
 }
 function footer(element){
