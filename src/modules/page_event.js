@@ -120,7 +120,7 @@ function constructEventMap(events){
 //Event Modal
 //helpers
 function eventModal(title="北大玩具節", time="2018.11.10", content="現場凡攜帶項二手玩具或2張111年1-4月發票. 報名方式: 至服務台捐出,即可領取闖關卡入場券。(絨毛娃娃不在回收範圍裡喔!)",
-_location="...", organizer="...", calendarUrl="",registerUrl=""){
+_location="...", organizer="...", calendarUrl="",registerUrl="", eventUrl=""){
   let calendarHtml=""
   if(calendarUrl !== ""){
     calendarHtml=googleCalendar(calendarUrl)
@@ -155,7 +155,7 @@ _location="...", organizer="...", calendarUrl="",registerUrl=""){
           ${tabContent(content, _location, organizer)}
         </div>
         <div class="modal-footer justify-content-center">
-          ${eventDecision(calendarHtml, registerHtml)}
+          ${eventDecision(calendarHtml, registerHtml, eventUrl)}
         </div>
       </div>
     </div>
@@ -221,11 +221,10 @@ function getFormatCase(ev){
 
   return { formatCase: formatCase, activityTime: activityTime }
 }
-function facebookShare(){
-  return `<div class="fb-share-button" data-href="https://tpemartin.github.io/usrapp-react/src/eventpage.html" data-layout="button_count" data-size="small"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Ftpemartin.github.io%2Fusrapp-react%2Fsrc%2Feventpage.html&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share</a></div>`
+function facebookShare(shareUri="https://tpemartin.github.io/usrapp-react/src/eventpage5.html"){
+  return `<div class="fb-share-button" data-href="${shareUri}"  data-layout="button_count" data-size="small"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=${encodeURI(shareUri)}&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share</a></div>`
 }
-  
-function eventDecision(calendarHtml,registerHtml){
+function eventDecision(calendarHtml,registerHtml, eventUrl){
   return `
   <div class="btn-toolbar justify-content-center" role="toolbar" aria-label="Toolbar with button groups">
     <div class="share-group" style="height:0">
@@ -234,7 +233,7 @@ function eventDecision(calendarHtml,registerHtml){
     <button type="button" class="btn btn-secondary">分享2</button>
     </div>
       <div class="btn-group mr-2" role="group" aria-label="Second group">  
-   ${facebookShare()}
+   ${facebookShare(eventUrl)}
     </div>
     </div>
     <div class="btn-group mr-2" role="group" aria-label="Second group">

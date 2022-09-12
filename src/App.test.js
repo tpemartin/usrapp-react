@@ -21,9 +21,11 @@ async function eventPageForShare(id){
       let index=eventInfo.eventMap[id]
       $("#carouselExampleCaptions").carousel(index).carousel("pause")//window.eventMap[id])
       let ev=eventInfo.events[index]
+      /*
       let metaTag= meta("https://tpemartin.github.io/usrapp-react/src/index.html?id="+ev.id, ev.活動名稱, ev.活動內容簡述, ev['海報網址'])
       console.log(metaTag) 
       $("head").append(metaTag)
+      */
     })
 }
 async function fillInEventPage(){
@@ -98,9 +100,14 @@ function getClickEvent(e){
     let eventIndex=eventMap[eventid]
     let targetEvent=events[eventIndex]
     console.log(targetEvent)
+    var targetUrl=targetEvent['活動官方網站（若無免填）']
+    if(targetUrl===''){
+      targetUrl=`https://tpemartin.github.io/usrapp-react/src/event-${targetEvent["id"]}.html`
+    }
     let evModal=eventModal(targetEvent['活動名稱'], eventTime(targetEvent), 
     targetEvent['活動內容簡述'], targetEvent['地點'], targetEvent['主辦單位細節'],
-    targetEvent["Google行事曆事件訂閱連結"],targetEvent['活動報名網址（若無免填）']
+    targetEvent["Google行事曆事件訂閱連結"],targetEvent['活動報名網址（若無免填）'],
+    targetUrl
     )
     console.log(evModal)
     $("#modal").empty()
