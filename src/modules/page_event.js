@@ -6,11 +6,21 @@ export function eventPageContent(eventCarousel){
     <div>
     `
 }
-export default async function fetchEventJson(){
+/* export default async function fetchEventJson(){
   let eventAPI="https://script.google.com/macros/s/AKfycbzE0Td7xZrldnxH06AC7HfJZ5b5Mms5Z2Z8DCFu2jDjfFZa0GgTMX1qMbfILi0ESVjbIg/exec"
   return await fetch(eventAPI).then(e=>e.json())
-}
+} */
 
+export default async function fetchEventJson(){
+  let eventAPI="https://script.google.com/macros/s/AKfycbzE0Td7xZrldnxH06AC7HfJZ5b5Mms5Z2Z8DCFu2jDjfFZa0GgTMX1qMbfILi0ESVjbIg/exec"
+  return await $.ajax({
+    dataType: "json",
+    url: eventAPI
+  }).then((e)=>{
+    alert("success")
+    return e
+  })
+}
 function footer(element){
     return `<div class="fixed-bottom" style="padding-bottom:15px">
     <div class="row">
