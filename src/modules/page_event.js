@@ -48,10 +48,6 @@ function eventButtons(){
     <button type="button" class="btn btn-secondary">分享2</button>
     </div>`
   }
-  function lineShare(){
-    return `<div class="line-it-button" data-lang="en" data-type="share-b" data-env="REAL" data-url="https://tpemartin.github.io/usrapp-react/src/demo_storyPage.html" data-color="default" data-size="small" data-count="false" data-ver="3" style="display: none;"></div>
-    <script src="https://www.line-website.com/social-plugins/js/thirdparty/loader.min.js" async="async" defer="defer"></script>`
-  }
 
 
 export function clickGetElement(callback=(e)=>console.log(e)){
@@ -224,14 +220,17 @@ function getFormatCase(ev){
 function facebookShare(shareUri="https://tpemartin.github.io/usrapp-react/src/eventpage5.html"){
   return `<div class="fb-share-button" data-href="${shareUri}"  data-layout="button_count" data-size="small"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=${encodeURI(shareUri)}&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share</a></div>`
 }
+function lineShare(shareUrl){
+  return `<button type="button" class="btn btn-secondary" data-url="${shareUrl}"></button>`
+}
 function eventDecision(calendarHtml,registerHtml, eventUrl){
   return `
   <div class="btn-toolbar justify-content-center" role="toolbar" aria-label="Toolbar with button groups">
     <div class="share-group" style="height:0">
     <div class="share-group" id="shareBox" style="display:none">
       <div class="btn-group mr-2" role="group" aria-label="Second group">  
-    <button type="button" class="btn btn-secondary">分享2</button>
-    </div>
+      ${lineShare(eventUrl)}
+      </div>
       <div class="btn-group mr-2" role="group" aria-label="Second group">  
    ${facebookShare(eventUrl)}
     </div>
