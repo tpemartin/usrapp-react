@@ -6,8 +6,10 @@ import fetchEventJson,
 $(function(){
     // sidebar storyPage click
     $("#storyPage").click(fillInStoryPage)
+    $("#storyPage").on("tap", fillInStoryPage)
     // sidebar eventPage click 
     $("#eventPage").click(fillInEventPage)
+    $("#eventPage").on("tap", fillInEventPage)
 
     let id=getQueryParameter()
     if(id) eventPageForShare(id)
